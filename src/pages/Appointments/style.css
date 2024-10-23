@@ -1,0 +1,14 @@
+.button-filtrar {
+    height: 40px;
+    width: 200px;
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    border-radius: 5px; /* Define bordas arredondadas */
+}
+
+/* Para manter o layout responsivo */
+@media (max-width: 768px) {
+    .btn-novo-agendamento {
+        padding: 8px 15px; /* Diminui o padding em telas menores */
+        font-size: 14px;
+    }
+}

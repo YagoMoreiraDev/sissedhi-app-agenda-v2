@@ -1,0 +1,106 @@
+.body-container {
+  background: linear-gradient(
+    to bottom right,
+    #34a853,
+    #008080,
+    #f28b20,
+    #30bea0
+  );
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden; /* Garante que não haja scroll */
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.22); /* Sombras para o efeito 3D */
+  max-width: 400px;
+  width: 100%;
+  transform: translateZ(0); /* Inicialização do 3D */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.container:hover {
+  transform: translateY(-10px) scale(1.02); /* Leve movimento ao passar o mouse */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.22); /* Aumenta a sombra para intensificar o efeito */
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Desfoque no fundo */
+  z-index: -1; /* Garante que o desfoque fique atrás do formulário */
+}
+
+.img-logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.div-button {
+  display: flex;
+  flex-direction: column; /* Botões em coluna */
+  margin-top: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #34a853;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 5px; /* Diminui o espaçamento entre os botões */
+}
+
+button:last-child {
+  margin-bottom: 0; /* Remove a margem do último botão */
+}
+button:hover {
+  background-color: #2e9a43;
+  transform: scale(1.03);
+}
+
+.form-control {
+  width: 100%; /* Os campos já estão com 100% de largura */
+  height: 2.5rem; /* Ajustar para uma altura confortável */
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+
+.sign-up-message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #000; /* Cor da mensagem "Não tenho conta" */
+}
+
+.link-create-account {
+  color: #34a853; /* Cor igual à dos botões */
+  text-decoration: none;
+  font-weight: 500; /* Deixa o link um pouco mais destacado */
+}
+
+.link-create-account:hover {
+  text-decoration: underline;
+  color: #2e9a43; /* Muda levemente a cor ao passar o mouse */
+}
