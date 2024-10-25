@@ -21,7 +21,7 @@ export default function Navbar() {
                             <Link className="nav-link active" to="/agendamentos">Agendamento</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/doctos">Médicos</Link>
+                            <Link className="nav-link active" to="/requeridos">Requeridos</Link>
                         </li>
                     </ul>
                     <ul className="navbar-nav">

@@ -1,0 +1,17 @@
+.flex {
+    display: flex; 
+    gap: 8px;
+    justify-content: end ; 
+}
+
+.status-text {
+    text-align: justify;
+}
+
+.btn-app {
+    width: 30px;
+}
+.btn-delete {
+    height: 32px;
+}
+

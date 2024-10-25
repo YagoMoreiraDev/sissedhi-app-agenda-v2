@@ -1,14 +1,28 @@
 .button-filtrar {
-    height: 40px;
-    width: 200px;
-    font-size: 14px; /* Ajusta o tamanho da fonte */
-    border-radius: 5px; /* Define bordas arredondadas */
+  height: 40px;
+  width: 200px;
+  font-size: 14px; 
+  border-radius: 5px; 
 }
+
+.col-assunto {
+  width: 30%;
+}
+
+.col-status {
+  width: 5%;
+}
+
+.col-buttons {
+  width: 10%; 
+  text-align: center; 
+}
+
 
 /* Para manter o layout responsivo */
 @media (max-width: 768px) {
-    .btn-novo-agendamento {
-        padding: 8px 15px; /* Diminui o padding em telas menores */
-        font-size: 14px;
-    }
+  .btn-novo-agendamento {
+    padding: 8px 15px; /* Diminui o padding em telas menores */
+    font-size: 14px;
+  }
 }
